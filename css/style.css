@@ -1,0 +1,335 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Lato', sans-serif;
+}
+a, a:hover{
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0px;
+}
+ul, li{
+    list-style: none;
+}
+
+/* ----- Header Section CSS Codes Start ----- */
+.main-header{
+    background: #f9f9f6;
+    padding-bottom: 20px;
+}
+.logo{
+    padding-top: 20px;
+}
+
+/* ----- Banner Section CSS Codes Start ----- */
+.banner-area{
+    background: url(../img/banner.png) center;
+    background-size: 100% 100%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+.banner-header{
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 180px;
+}
+.banner-header:before{
+    content: "";
+    position: absolute;
+    width: 46%;
+    background-color: #15a4fa;
+    height: 2px;
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+}
+.banner-header-caption{
+    color: #fff;
+    font-size: 18px;
+    margin: 55px auto 0px auto;
+}
+.banner-area .btn-info{
+    margin-top: 70px;
+    margin-bottom: 180px;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid #15a4fa;
+    background: transparent;
+    border-radius: 4px;
+    padding: 13px 45px;
+}
+.banner-area .btn-info:hover{
+    background: #15a4fa;
+}
+.fa-angle-down{
+    position: absolute;
+    color: #fff;
+    font-size: 40px;
+    bottom: -30px;
+    left: 49%;
+}
+
+/* ----- Pre-feature Section CSS Codes Start ----- */
+.pre-feature{
+    position: relative;
+    background: #f9f9f6;
+}
+.pre-feature-header{
+    font-size: 40px;
+    font-weight: 400;
+    color: #000;
+    padding-top: 100px;
+}
+.pre-feature-caption{
+    color: #999999;
+    padding-top: 30px;
+    font-size: 16px;
+}
+
+/* ----- Feature Section CSS Codes Start ----- */
+.features-area{
+    padding-top: 60px;
+    padding-bottom: 65px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.icon-container{
+    padding: 0px 20px;
+}
+.icon-container .icons{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0px auto;
+}
+.icons i{
+    position: relative;
+    font-size: 50px;
+    color: #fff;
+    line-height: 100px;
+    z-index: 2;
+}
+.icon-container .icons:before{
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: #48baff;
+    z-index: 1;
+}
+.icon-container .icons:after{
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    background: #5fc3ff;
+    z-index: 1;
+}
+.feature-header{
+    margin: 30px 0px 10px 0px;
+    font-size: 17px;
+    font-weight: 600;
+}
+.feature-caption{
+    color: #999999;
+    font-size: 12px;
+}
+
+/* ----- Portfolio Section CSS Codes Start ----- */
+.portfolio{
+    position: relative;
+    background: #f9f9f6;
+    padding-bottom: 120px;
+}
+.portfolio-header{
+    margin-top: 80px;
+    font-size: 40px;
+    font-weight: 400;
+}
+.portfolio-header-caption{
+    font-size: 12px;
+    color: #999999;
+    margin: 20px 0px 80px 0px;
+}
+.image-gallery{
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+.image-gallery img{
+    width: 100%;
+}
+.image-gallery .gallery-overlay{
+    position: absolute;
+    visibility: hidden;
+    top: 0px;
+    left: 0px;
+    height: 93%;
+    width: 100%;
+    background: rgba(21, 164, 250, 0.9);
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    transform: scale(0);
+}
+.image-gallery:hover .gallery-overlay{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+.overlay-icons{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.overlay-icons span{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    line-height: 40px;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    color: #f9f9f9;
+    margin: 5px;
+}
+
+/* ----- Pre-footer Section CSS Codes Start ----- */
+.pre-footer{
+    height: 700px;
+    background: url(../img/BG.png) no-repeat;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.pre-footer-header{
+    padding-top: 80px;
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.pre-footer-header-caption{
+    color: #999999;
+    text-align: center;
+    margin-bottom: 55px;
+}
+.form-area{
+    width: 100%;
+    max-width: 550px;
+    margin: 0px auto;
+    z-index: 12;
+    position: relative;
+}
+.input-field{
+    display: block;
+    width: 100%;
+    padding: 25px 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #999999;
+    background: transparent;
+}
+.message{
+    width: 100%;
+    padding: 25px 0px 120px 15px;
+    border: 1px solid #999999;
+    background: transparent;
+    border-radius: 4px;
+}
+.submission-area{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.checkbox{
+    margin-top: 35px;
+}
+.check-boxes{
+    background-color: #9ba1ab;
+    color: #9ba1ab;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+}
+.submission-area .checkbox input{
+    position: absolute;
+    color: #9ba1ab;
+}
+.submission-area .checkbox label{
+    color: #fff;
+    font-size: 15px;
+}
+.check-boxes + label{
+    position: relative;
+    cursor: pointer;
+    padding: 0px;
+    margin-left: 10px;
+}
+.check-boxes + label:before{
+    content: "";
+    display: inline-block;
+    margin-right: 15px;
+    border-radius: 4px;
+    background: #9ba1ab;
+    vertical-align: text-top;
+}
+.submission-area .btn{
+    padding: 10px 50px;
+    border: 1px solid #15a4fa;
+    background: transparent;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+.submission-area .btn:hover{
+    background: #15a4fa;
+}
+
+/* ----- Footer Section CSS Codes Start ----- */
+.main-footer{
+    height: 90px;
+    background: #f6f9f9;
+}
+.footer-contents{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.copyright-text{
+    color: #999999;
+    margin-top: 35px;
+}
+.social-icons{
+    padding: 5px;
+}
+.social-icons a i{
+    background: #15a4fa;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 20px;
+}
